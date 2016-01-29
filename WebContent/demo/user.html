@@ -6,7 +6,6 @@
 		<script language="JavaScript" src="user.js"></script>
 		<title>table的增删改</title>
 	</head>
-	<script src="user.js"></script>
 	<body>
 		<center>
 			<br><br>
@@ -15,6 +14,7 @@
 			email: <input type="text" name="email" id="email" />&nbsp;&nbsp;
 			电话: <input type="text" name="tel" id="tel" /><br><br>
 			<button id="addUser">提交</button>
+			<button id="deleteUser">批量删除</button>
 			<br><br>
 			<hr>
 			<br><br>
@@ -35,6 +35,7 @@
 			<br>
 			<hr>
 			修改用户:<br><br>
+			<input type="hidden" id="id_update" />
 			姓名: <input type="text" name="name" id="name_update" />&nbsp;&nbsp;
 			email: <input type="text" name="email" id="email_update" />&nbsp;&nbsp;
 			电话: <input type="text" name="tel" id="tel_update" /><br><br>
