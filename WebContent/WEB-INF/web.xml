@@ -9,4 +9,36 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+  <listener>
+  	<display-name>personListener</display-name>
+  	<listener-class>com.xiaotian.listener.PersonListener</listener-class>
+  </listener>
+  
+  <servlet>
+    <servlet-name>AjaxPostServlet</servlet-name>
+    <servlet-class>com.xiaotian.servlet.AjaxPostServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AjaxAjaxServlet</servlet-name>
+    <servlet-class>com.xiaotian.servlet.AjaxAjaxServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PersonServlet</servlet-name>
+    <servlet-class>com.xiaotian.servlet.PersonServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AjaxPostServlet</servlet-name>
+    <url-pattern>/AjaxPostServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AjaxAjaxServlet</servlet-name>
+    <url-pattern>/AjaxAjaxServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PersonServlet</servlet-name>
+    <url-pattern>/PersonServlet</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
